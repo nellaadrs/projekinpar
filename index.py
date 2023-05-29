@@ -81,7 +81,7 @@ with tabs[1]:
     from string import punctuation
 
     #hapus tanda hubung
-    import regex as re
+    import re
     def remove_punctuation(text):
         text = re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)"," ",text)
         return text
