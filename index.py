@@ -47,7 +47,7 @@ with tabs[1]:
     )
 
     data = pd.read_csv('https://raw.githubusercontent.com/DiahDSyntia/ProjekAkhir6/main/datawisata.csv')
-    st.write("Data Cancer (https://raw.githubusercontent.com/DiahDSyntia/Data-Mining/main/dataR2.csv) ",data)
+    st.write("Data Cancer (https://raw.githubusercontent.com/nellaadrs/projekinpar/main/data-wisata.csv) ",data)
     #ukuran data
     data.shape
 
