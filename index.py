@@ -49,7 +49,7 @@ with tabs[1]:
     data = pd.read_csv('https://raw.githubusercontent.com/DiahDSyntia/ProjekAkhir6/main/datawisata.csv')
     st.write("Data Cancer (https://raw.githubusercontent.com/nellaadrs/projekinpar/main/data-wisata.csv) ",data)
     #ukuran data
-    data.shape
+    st.write("Ukuran Data : "data.shape)
 
     #cek data kosong
     data.isnull().sum()
