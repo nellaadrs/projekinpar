@@ -89,7 +89,7 @@ with tabs[1]:
     data
 
     #menormalisasikan kata tidak baku (hash)
-    normalize = pd.read_csv("https://raw.githubusercontent.com/DiahDSyntia/ProjekAkhir6/main/datawisata.csv")
+    normalize = pd.read_csv("https://raw.githubusercontent.com/nellaadrs/projekinpar/main/Normalization-Data.csv")
     normalize_word_dict={}
 
     for row in normalize.iterrows():
