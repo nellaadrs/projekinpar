@@ -11,8 +11,8 @@ st.write("""
 """
 )
 
-img = Image.open('dlundung.jpg')
-st.image(img, use_column_width=False)
+#img = Image.open('dlundung.jpg')
+#st.image(img, use_column_width=False)
 
 tab_titles = [
     "Homepage",
