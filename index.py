@@ -52,8 +52,8 @@ with tabs[1]:
     st.write("Ukuran Data : ", data.shape)
 
     #cek data kosong
-    data.isnull().sum()
-
+    st.write("Mengcek data kosong :", data.isnull().sum())
+    
     data.info()
 
     #drop data kosong
@@ -61,7 +61,7 @@ with tabs[1]:
 
     data.isnull().sum()
 
-    #PREPROCESSING
+    st.write("TAHAP PREPROCESSING")
     #hapus karakter
     def delete_char(text):
         text = text.replace('\\t',"").replace('\\n',"").replace('\\u',"").replace('\\',"")
@@ -69,7 +69,7 @@ with tabs[1]:
         return text.replace("http://"," ").replace("https://", " ")
         return text.replace("https://","").replace("http://","")
     data["Ulasan"]=data["Ulasan"].apply(delete_char)
-    # st.write("Dibawah ini adalah data yang karakternya sudah dihapus",data)
+    st.write("Dibawah ini adalah data yang karakternya sudah dihapus",data)
 
     #ubah huruf kecil
     def change_var(text):
